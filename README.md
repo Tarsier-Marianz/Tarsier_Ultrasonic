@@ -32,6 +32,7 @@ void setup(){
 
 void loop(){
     long distanceCm = _hcSR04_Sensor.getDistanceCm();
+    //long distanceInc = _hcSR04_Sensor.getDistanceInch();
     Serial.print("Distance in Centimeter: ");
     Serial.println(distanceCm);
 }
