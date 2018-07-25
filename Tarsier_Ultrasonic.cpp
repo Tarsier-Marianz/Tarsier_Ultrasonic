@@ -28,7 +28,7 @@ void Tarsier_Ultrasonic::setPins(byte trigPin, byte echoPin)
   this->_trigPin = trigPin;
   this->_echoPin = echoPin;
   pinMode(this->_trigPin, OUTPUT);
-  pinMode(this->_echoPin, OUTPUT);
+  pinMode(this->_echoPin, INPUT);
 }
 
 void Tarsier_Ultrasonic::ping()
