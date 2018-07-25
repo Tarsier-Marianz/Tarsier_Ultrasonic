@@ -1,6 +1,7 @@
 /*
 * Tarsier_Ultrasonic.cpp
-*
+* I created this library based from https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm
+* 
 * Created: 07/25/2018 12:07:32 PM
 * Author: TARSIER
 */
