@@ -1,11 +1,11 @@
 #include "Tarsier_Ultrasonic.h"
 
-Tarsier_Ultrasonic _hcSR04_Sensor;
+Tarsier_Ultrasonic _hcSR04_Sensor(6,7);
 
 void setup()
 {
     Serial.begin(9600);
-    _hcSR04_Sensor.setPins(6, 7);
+    //_hcSR04_Sensor.setPins(6, 7);
 }
 
 void loop()
