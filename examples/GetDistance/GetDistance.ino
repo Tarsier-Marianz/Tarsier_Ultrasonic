@@ -1,6 +1,6 @@
 #include "Tarsier_Ultrasonic.h"
 
-Tarsier_Ultrasonic _hcSR04_Sensor(6,7);
+Tarsier_Ultrasonic _hcSR04_Sensor(6, 7);
 
 void setup()
 {
@@ -11,6 +11,6 @@ void setup()
 void loop()
 {
     long distanceCm = _hcSR04_Sensor.getDistanceCm();
-    Serial.print("Distance in Centimeter: ")
-        Serial.println(distanceCm)
+    Serial.print("Distance in Centimeter: ");
+    Serial.println(distanceCm);
 }
