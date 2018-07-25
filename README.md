@@ -17,14 +17,17 @@ A simple demo on how to use this libray, or see [example](https://github.com/Tar
 ```c++
 
 #include "Tarsier_Ultrasonic.h"
-Tarsier_Ultrasonic _hcSR04_Sensor;
 
 int TRIG_PIN    = 6;
 int ECHO_PIN    = 7;
 
+Tarsier_Ultrasonic _hcSR04_Sensor(TRIG_PIN, ECHO_PIN);
+
 void setup(){
     Serial.begin(9600);
-    _hcSR04_Sensor.setPins(TRIG_PIN, ECHO_PIN);
+    // alternate way of pin configuration
+    // if not set (trig & echo pins) in constructor
+    //_hcSR04_Sensor.setPins(TRIG_PIN, ECHO_PIN);
 }
 
 void loop(){
