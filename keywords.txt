@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map for Tarsier_Ultrasonic
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Tarsier_Ultrasonic	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setPins	KEYWORD2
+getDistanceInch	KEYWORD2
+getDistanceCm	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+TRIG_PIN	LITERAL1
+ECHO_PIN	LITERAL1
