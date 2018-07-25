@@ -51,12 +51,14 @@ void Tarsier_Ultrasonic::ping()
 long Tarsier_Ultrasonic::getDistanceInch()
 {
   this->ping();
-  return this->durationInMicroseconds / 74 / 2;
+  //return this->durationInMicroseconds / 74 / 2;
+  return this->durationInMicroseconds *  0.0133 / 2;       //using reference from https://howtomechatronics.com/
 }
 
 long Tarsier_Ultrasonic::getDistanceCm()
 {
   this->ping();
-  return this->durationInMicroseconds / 29 / 2;
+  //return this->durationInMicroseconds / 29 / 2;
+  return this->durationInMicroseconds * 0.034 / 2;        //using reference from https://howtomechatronics.com/
 }
 
