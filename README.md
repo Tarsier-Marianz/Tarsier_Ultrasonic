@@ -12,6 +12,28 @@ A minimal *Arduino library* for **HC-SR04** Ultrasonic sensor.
 - `long getDistanceInch()` <br> function to get the distance of an object in inches.
 - `long getDistanceCm()` <br> function to get the distance of an object in centimeters.
 
+## Example
+A simple demo on how to use this libray, or see [example](https://github.com/Tarsier-Marianz/Tarsier_Ultrasonic/tree/master/examples) folder of this repo.
+```c++
+
+#include "Tarsier_Ultrasonic.h"
+Tarsier_Ultrasonic _hcSR04_Sensor;
+
+int TRIG_PIN    = 6;
+int ECHO_PIN    = 7;
+
+void setup(){
+    Serial.begin(9600);
+    _hcSR04_Sensor.setPins(TRIG_PIN, ECHO_PIN);
+}
+
+void loop(){
+    long distanceCm = _hcSR04_Sensor.getDistanceCm();
+    Serial.print("Distance in Centimeter: ");
+    Serial.println(distanceCm);
+}
+
+```
 
 ## References
 Thanks to [tutorialspoint.com](https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm) for their tutorials on how to use **HC-SR04** Ultrasonic sensor on Arduino.
