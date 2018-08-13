@@ -16,7 +16,7 @@
 // default constructor
 Tarsier_Ultrasonic::Tarsier_Ultrasonic()
 {
-  this->setPins(TRIG_PIN, ECHO_PIN);
+  this->setPins(_TRIG_PIN, _ECHO_PIN);
 }
 
 Tarsier_Ultrasonic::Tarsier_Ultrasonic(byte trigPin, byte echoPin)

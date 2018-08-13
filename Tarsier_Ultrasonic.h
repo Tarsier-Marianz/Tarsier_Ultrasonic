@@ -15,8 +15,8 @@
 #endif
 #include <Wire.h>
 
-#define TRIG_PIN 6 // set default trigger pin to digital pin6
-#define ECHO_PIN 7 // set default trigger pin to digital pin7
+#define _TRIG_PIN 6 // set default trigger pin to digital pin6
+#define _ECHO_PIN 7 // set default trigger pin to digital pin7
 
 class Tarsier_Ultrasonic
 {	
