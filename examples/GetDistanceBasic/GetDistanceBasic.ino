@@ -1,5 +1,5 @@
 /*
- * GetDistance
+ * GetDistanceBasic
  * Prints the distance read by an ultrasonic sensor in
  * centimeters.  
  *
